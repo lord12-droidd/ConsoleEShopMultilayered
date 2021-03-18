@@ -251,14 +251,14 @@ namespace UI
                 Console.WriteLine("Show product list - 0");
                 Console.WriteLine("Search product by name - 1");
                 Console.WriteLine("Registration - 2");
-                Console.WriteLine("Enter as User - 3");
+                Console.WriteLine("Enter to system - 3");
             }
             else if (current.CurrentRights == Rights.RegistredUser)
             {
                 Console.WriteLine("Show product list - 0");
                 Console.WriteLine("Search product by name - 1");
                 Console.WriteLine("Create new order - 2");
-                Console.WriteLine("Cancellation - 3");
+                Console.WriteLine("Order cancellation - 3");
                 Console.WriteLine("View order history and delivery status - 4");
                 Console.WriteLine("Setting the status of the order 'Received' - 5");
                 Console.WriteLine("Change personal information - 6");
@@ -269,7 +269,7 @@ namespace UI
                 Console.WriteLine("Show product list - 0");
                 Console.WriteLine("Search product by name - 1");
                 Console.WriteLine("Create new order - 2");
-                Console.WriteLine("Ordering or cancellation - 3");
+                Console.WriteLine("Order cancellation - 3");
                 Console.WriteLine("View and change personal information of users - 4");
                 Console.WriteLine("Add new product - 5");
                 Console.WriteLine("Change information about product - 6");
