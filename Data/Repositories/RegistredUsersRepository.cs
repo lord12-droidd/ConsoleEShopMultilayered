@@ -28,15 +28,6 @@ namespace Data.Repositories
             return true;
         }
 
-        public RegistredUserEntity DeleteUserByID(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public RegistredUserEntity GetUserByID(int id)
-        {
-            throw new NotImplementedException();
-        }
 
         public RegistredUserEntity GetUserByLogin(string login)
         {

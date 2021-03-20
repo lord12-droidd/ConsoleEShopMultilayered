@@ -21,7 +21,7 @@ namespace UI
             Inputer inputer = new Inputer();
             while (true)
             {
-                RegistredUserService registredUserService = new RegistredUserService(_registredUsersRepository);  // ми не можемо викликати методи просто через інтерфейс
+                RegistredUserService registredUserService = new RegistredUserService(_registredUsersRepository);
                 ProductService productService = new ProductService(_productsRepository);
                 OrderService ordersService = new OrderService(_ordersRepository);
                 Console.WriteLine();
@@ -101,14 +101,11 @@ namespace UI
                             };
 
 
-                            //order.OrderedProducts.AddRange(productService.GetBucketProducts(inputer.FormBucket(productService.GetProducts())));
-                            //order.Receiver = registredUserService.GetUserByLogin(current.Login).Login;
                             ordersService.AddOrder(order);
                             Console.WriteLine();
                             break;
                         case "3":
-                            //(current as RegistredGuest).OrderRegistration((current as RegistredGuest).Login);
-                            //outputer.OutputUsersOrders(ordersService.GetOrdersByLogin(current.Login));
+
                             if(ordersService.GetOrdersByLogin(current.Login).Count == 0)
                             {
                                 Console.WriteLine("Your backet is an empty");
@@ -209,7 +206,7 @@ namespace UI
                             Console.WriteLine();
                             break;
                         case "6":
-                            //(current as Admin).ViewProductsList();
+
                             outputer.OutputProducts(productService.GetProducts());
                             Console.WriteLine();
                             if(inputer.IsAdminWantToChange() == true)

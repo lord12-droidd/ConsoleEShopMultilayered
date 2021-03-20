@@ -9,9 +9,7 @@ namespace Data.Repositories.Abstract
     {
         bool AddUser(RegistredUserEntity registredUser);
         void UpdateUser(RegistredUserEntity registredUser);
-        RegistredUserEntity GetUserByID(int id);
         RegistredUserEntity GetUserByLogin(string login);
-        RegistredUserEntity DeleteUserByID(int id);
         List<RegistredUserEntity> GetRegistredUsers();
     }
 }
