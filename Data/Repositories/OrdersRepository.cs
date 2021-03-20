@@ -21,16 +21,6 @@ namespace Data.Repositories
             _orders.Add(order);
         }
 
-        public OrderEntity DeleteOrderByID(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public OrderEntity GetOrderByID(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public List<OrderEntity> GetOrders()
         {
             List<OrderEntity> users_orderEntities = new List<OrderEntity>();

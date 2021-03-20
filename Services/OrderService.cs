@@ -20,18 +20,6 @@ namespace Services
         public void AddOrder(Order order)
         {
             ordersRepository.AddOrder(order.ToEntity());
-            
-            // ТУт втрачаються продукти які ми додавали коли формували замовлення, через те що коли ми переводимо доменну модель до ентіті, в нас втрачаються продукти і вони не доходять до репозиторію
-        }
-
-        public Order DeleteOrderByID(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Order GetOrderByID(int id)
-        {
-            throw new NotImplementedException();
         }
         public List<Order> GetOrders()
         {
@@ -47,6 +35,7 @@ namespace Services
         {
             ordersRepository.UpdateOrderStatusByCustomID(id,currentlogin ,orderStatus);
         }
+
         public List<Order> GetOrdersByLogin(string login)
         {
             List<Order> orders = new List<Order>();

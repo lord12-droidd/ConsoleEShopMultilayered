@@ -40,7 +40,7 @@ namespace UI
                             outputer.OutputProducts(productService.GetProductsByName(Console.ReadLine()));
                             break;
                         case "2":
-                            Domain.RegistredUser registredUser = new Domain.RegistredUser  //працює, роби по прикладу цього
+                            Domain.RegistredUser registredUser = new Domain.RegistredUser
                             {
                                 Name = checker.CheckIsNotEmpty(inputer.InputName()),
                                 Lastname = checker.CheckIsNotEmpty(inputer.InputSurname()),
@@ -108,7 +108,7 @@ namespace UI
                             break;
                         case "3":
                             //(current as RegistredGuest).OrderRegistration((current as RegistredGuest).Login);
-                            outputer.OutputUsersOrders(ordersService.GetOrdersByLogin(current.Login));
+                            //outputer.OutputUsersOrders(ordersService.GetOrdersByLogin(current.Login));
                             if(ordersService.GetOrdersByLogin(current.Login).Count == 0)
                             {
                                 Console.WriteLine("Your backet is an empty");

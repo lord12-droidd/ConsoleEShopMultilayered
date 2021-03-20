@@ -9,9 +9,7 @@ namespace Services.Abstract
     {
         void AddOrder(Order order);
         void UpdateOrderStatusByCustomID(int id, string currentlogin ,Domain.Enums.OrderStatus orderStatus);
-        Order GetOrderByID(int id);
         List<Order> GetOrders();
-        Order DeleteOrderByID(int id);
         List<Order> GetOrdersByLogin(string login);
     }
 }

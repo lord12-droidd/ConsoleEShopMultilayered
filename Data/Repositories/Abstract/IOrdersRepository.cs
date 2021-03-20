@@ -9,9 +9,7 @@ namespace Data.Repositories.Abstract
     {
         void AddOrder(OrderEntity order);
         void UpdateOrderStatusByCustomID(int id, string currentlogin ,Domain.Enums.OrderStatus orderStatus);
-        OrderEntity GetOrderByID(int id);
         List<OrderEntity> GetOrders();
-        OrderEntity DeleteOrderByID(int id);
         List<OrderEntity> GetOrdersByLogin(string login);
     }
 }

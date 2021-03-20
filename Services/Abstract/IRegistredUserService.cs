@@ -9,9 +9,7 @@ namespace Services.Abstract
     {
         bool AddUser(RegistredUser registredUser);
         void UpdateUser(RegistredUser registredUser);
-        RegistredUser GetUserByID(int id);
         RegistredUser GetUserByLogin(string login);
-        RegistredUser DeleteUserByID(int id);
         List<RegistredUser> GetRegistredUsers();
     }
 }

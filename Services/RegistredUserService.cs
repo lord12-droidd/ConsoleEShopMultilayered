@@ -28,16 +28,6 @@ namespace Services
             return false;
         }
 
-        public RegistredUser DeleteUserByID(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public RegistredUser GetUserByID(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public RegistredUser GetUserByLogin(string login)
         {
             return registredUsersRepository.GetUserByLogin(login).ToDomain();
